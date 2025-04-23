@@ -1,0 +1,25 @@
+.parent {
+    background: #B5FCCD;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: ;
+    
+
+}
+.parent div{
+    padding: 10px;
+    margin: 10px ;
+}
+.item1{
+    background: #213448;
+}
+.item2{
+    background:#547792 ;
+}
+.item3{
+    background: #94B4C1;
+}
+.item4{
+    background: #ECEFCA;
+}
