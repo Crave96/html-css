@@ -1,0 +1,28 @@
+* {
+  /* background-color: rgb(0, 21, 255); */
+  box-sizing: border-box;
+  margin: 0;
+}
+.head-bar {
+  background-color: #d5e5e6;
+  height: 90px;
+  display: flex ;
+}
+
+.offer-container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.offer-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.offer-content {
+  display: flex;
+  gap: 10px;
+}
