@@ -42,13 +42,14 @@ body {
   border: 0px;
   padding: 10px 13px;
 }
+.offer-button:hover{
+  background-color:#892de1;
+}
 
 .menu {
   background-color: #ffffff;
 }
-.menu .ul :hover{
-  background-color: #892de1;
-}
+
 
 ul {
   list-style: none;
@@ -58,6 +59,31 @@ ul {
   height: 70px;
   align-items: center;
   justify-content: space-evenly;
+  
+}
+#Explore{
+  padding: 10px;
+}
+#Explore:hover{
+  background-color: #EDE5F9;
+  color: #892de1;
+  border-radius: 3px;
+}
+#Udemy-Business{
+  padding: 10px;
+}
+#Udemy-Business:hover{
+  background-color: #EDE5F9;
+  color: #892de1;
+  border-radius: 3px;
+}
+#Teach-on-Udemy{
+  padding: 10px;
+}
+#Teach-on-Udemy:hover{
+  background-color: #EDE5F9;
+  color: #892de1;
+  border-radius: 3px;
 }
 
 ul li a {
@@ -73,6 +99,9 @@ ul li a {
   margin: 10px;
   display: flex;
   border: 1px solid #6d28d2;
+}
+#se:hover {
+  background-color: #F6F7F9;
 }
 
 #img-logo {
@@ -197,7 +226,10 @@ nav ul li a button.sing-up:hover{
 }
 .career-section .section:hover {
   background-color: rgba(222, 210, 210, 0.478);
+
 }
+
+
 .career-section .body .section img {
   width: 100%;
   height: 100%;
