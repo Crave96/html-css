@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "F ranklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body {
   background-color: #A0C878;
@@ -45,7 +45,6 @@ ul {
   height: 95%;
 }
 ul li a {
-  display: block;
   text-decoration: none;
   font-size: 30px;
   padding: 10px;
@@ -68,7 +67,7 @@ td:hover {
   width: 100%;
 }
 .log-out a {
-  background-color: rgb(165, 64, 64);
+  background-color: white;
 }
 ul li a i {
   font-style: 30px;
@@ -94,7 +93,7 @@ ul li a i {
   gap: 10px;
 }
 .data-info .box {
-  background-color: #2DAA9E;
+  background-color: #2d2daa;
   height: 150px;
   flex-basis: 150px;
   flex-grow: 1;
