@@ -231,7 +231,7 @@ nav ul li a button.sing-up:hover {
 }
 
 .career-section .section:hover {
-  background-color: rgba(222, 210, 210, 0.478);
+  background-color: #e8e9ec;
 }
 
 .career-section .body .section img {
@@ -328,6 +328,7 @@ nav ul li a button.sing-up:hover {
   display: flex;
   margin-top: 10px;
   gap: 20px;
+  
 }
 
 .skills-section .meun-bar .bar {
@@ -336,6 +337,8 @@ nav ul li a button.sing-up:hover {
   border-radius: 50px;
   font-weight: bold;
   padding: 20px;
+  flex-direction: column;
+  gap:3px;
 }
 
 .skills-section .meun-bar .bar:hover {
@@ -351,17 +354,49 @@ nav ul li a button.sing-up:hover {
   width: 100%;
   gap: 20px;
   margin-top: 40px;
+  padding: 10px;
+}
+.skills-section .cards .card:hover {
+  background-color: #e8e9ec;
 }
 
 .skills-section .cards .card {
   width: 300px;
-  flex: 1;
-  border: 2px solid #f6f7f9;
+  box-shadow: 2px 4px 8px rgba(6, 17, 118, 0.08),
+  0 7px 12px rgba(6, 17, 118, 0.08);
   border-radius: 9px;
-  /* background-color: red; */
+  padding: 10px;
 }
 
 .skills-section .cards .card img {
   width: 100%;
-  height: 100%;
+  
 }
+
+.skills-section button {
+  background-color: #E5DEF4;
+  color: #6d28d2;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 300px;
+  border: 1px solid #6d28d2;
+  margin-bottom:40px;
+  margin-top: 30px;
+}
+.skills-section .card-text{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width:fit-content;
+}
+.skills-section .price{
+  display:column;
+  padding: 10px;
+  margin-top: 10px;
+}
+.skills-section #text-card{
+  margin-bottom: 15px;
+}
+
+
+
