@@ -4,7 +4,6 @@
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
-  color: black;
 }
 
 button {
@@ -267,6 +266,7 @@ nav ul li a button.sing-up:hover {
 
 .career-section button:hover {
   background-color: #ede5f9;
+  
 }
 
 .career-section .body .section .star-section {
@@ -322,6 +322,7 @@ nav ul li a button.sing-up:hover {
 
 .skills-section .tabs .tab:hover {
   border-bottom: 2px solid #000000;
+  
 }
 
 .skills-section .meun-bar {
@@ -342,8 +343,8 @@ nav ul li a button.sing-up:hover {
 }
 
 .skills-section .meun-bar .bar:hover {
-  background-color: #33364a;
-  color: white;
+  background-color:#33364A;
+  color:white ;
   cursor: pointer;
 }
 
