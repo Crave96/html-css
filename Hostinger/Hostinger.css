@@ -1,321 +1,410 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
 }
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 .header-page {
-    width: 100%;
-    height: 80px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: white;
-
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+.ask-kodee {
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  z-index: 1;
+}
+.ask-kodee button {
+  
+  background-color: #673de6;
+  color: white;
+  font-weight: 800;
+  border-radius: 100px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  padding: 8px 16px 8px 8px;
+}
+.ask-kodee button:hover {
+  background-color: #5025d1;
 }
 
 .header-page .logo-meun :hover {
-    color: gray;
+  color: gray;
 }
 
 .header-page .logo-meun {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .header-page .lag-log-in {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .log-in button {
-    height: 45px;
-    width: 70px;
-    background-color: white;
-    border-radius: 5px;
-    font-weight: 700;
+  height: 45px;
+  width: 70px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
 .page-one {
-    width: 100%;
-    height: 100%;
-    display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
 }
 
 .offer-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: auto;
-    color: #2F1C6A;
-    transform: translate(-70px, 0px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #2f1c6a;
 }
 
 .online-photo img {
-    padding: 40px;
-    width: 1100px;
+  padding: 40px;
+  display: flex;
 }
 
 .claim-button button {
-    width: 150px;
-    height: 45px;
-    border-radius: 10px;
-    border: 0px solid;
-    font-weight: 700;
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0px solid;
+  font-weight: 700;
 }
 
 #claim-button {
-    background-color: #673DE5;
-    color: white;
-    margin-right: 5px;
+  background-color: #673de5;
+  color: white;
+  margin-right: 5px;
 }
 
 #claim-button:hover {
-    background-color: #5025D1;
+  background-color: #5025d1;
 }
 
-
 #timer-button {
-    background-color: #E2DBFC;
-    color: #2F1F78;
+  background-color: #e2dbfc;
+  color: #2f1f78;
 }
 
 .plans {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-    color: #2F1C6A;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  color: #2f1c6a;
 }
 
 .page-two .recommended {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-   
+  display: flex;
+  width: 100vh;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 400px;
+  margin: auto;
 }
 
 .plans #pick {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .cards {
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .cards .premium {
-    background-color: #FAFBFF;
-    padding: 30px;
-    margin-top: 50px;
-    border: 1px solid #D5DFFF;
-    border-radius: 15px;
-    color: #2F1C95;
-    padding: 50px 25px;
-
+  background-color: #fafbff;
+  padding: 30px;
+  margin-top: 50px;
+  border: 1px solid #d5dfff;
+  border-radius: 15px;
+  color: #2f1c95;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .cards .business {
-    background-color: #FAFBFF;
-    border-radius: 10px;
-    color: #2F1C95;
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border: 3px solid #8C85FF;
+  background-color: #fafbff;
+  border-radius: 10px;
+  color: #2f1c95;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 3px solid #8c85ff;
 }
 
 .cards .business .most {
-    height: 35px;
-    background-color: #8C85FF;
-    color: white;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-
+  height: 35px;
+  background-color: #8c85ff;
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
 }
 
 .cards .business .business-body {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    padding: 50px 25px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 50px 25px;
+  gap: 20px;
+}
+.bottom-body {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  gap: 25px;
+}
+.see-features {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  color: #673dea;
+  cursor: pointer;
+}
+.business-body button {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #673de6;
+  color: white;
+  border: 0px solid;
+  font-weight: 600;
+  font-size: large;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.premium button,
+.cloud-stat-up button {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #673de6;
+  border: 0px solid;
+  font-weight: 600;
+  font-size: large;
+  border-radius: 10px;
+  border: 2px solid #673de6;
+  transition: 0.5s;
+}
+.premium button:hover,
+.cloud-stat-up button:hover {
+  background-color: #e2dbfc;
+}
+.business-body button:hover {
+  background-color: #5025d1;
 }
 
 .cards .cloud-stat-up {
-    background-color: #FAFBFF;
-    padding: 30px;
-    margin-top: 50px;
-    border: 1px solid #D5DFFF;
-    border-radius: 15px;
-    color: #2F1C95;
-    padding: 50px 25px;
+  background-color: #fafbff;
+  padding: 30px;
+  margin-top: 50px;
+  border: 1px solid #d5dfff;
+  border-radius: 15px;
+  color: #2f1c95;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .payment {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    cursor: pointer;
-    color: #673DE6;
-    font-weight: 600;
-    height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #673de6;
+  font-weight: 600;
+  height: 40px;
 }
 
 .payment:hover {
-    color: #6040D2;
+  color: #6040d2;
 }
 
 .your-online {
-    margin-top: 90px;
-    height: 220px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    color: #2F1C6A;
-
+  margin-top: 90px;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  color: #2f1c6a;
 }
 
 .your-online .meun-bar {
-    display: flex;
-    gap: 40px;
-
-
+  display: flex;
+  gap: 40px;
 }
 
 .meun-bar .recommended,
 .create,
 .hosting,
 .domains {
-    background-color: #F4F5FF;
-    height: 40px;
-    width: 150px;
-    align-content: center;
-    justify-items: center;
-    border-radius: 20px;
-    gap: 10px;
-    cursor: pointer;
+  background-color: #f4f5ff;
+  height: 40px;
+  width: 150px;
+  align-content: center;
+  justify-items: center;
+  border-radius: 20px;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .meun-bar .recommended:hover,
 .create:hover,
 .hosting:hover,
 .domains:hover {
-    background-color: #FAFBFF;
+  background-color: #fafbff;
 }
 
-
 .your-online-photos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .website-made {
-    margin-top: 60px;
-    width: 100%;
-    height: 700px;
-    background-color: #1F1346;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    gap: 30px;
+  margin-top: 60px;
+  width: 100%;
+  height: 700px;
+  background-color: #1f1346;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  gap: 30px;
 }
 
 .header-website {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .currently {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 80px;
 }
 
 .cards-website {
-    display: flex;
-    gap: 30px;
-    height: 300px;
-    width: 100%;
-    padding: 10px;
-    justify-content: center;
+  display: flex;
+  gap: 30px;
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
 }
 
 .simple,
 .fast,
 .free {
-    display: flex;
-    flex-direction: column;
-    background-color: #2F1C6A;
-    border-radius: 20px;
-    padding: 30px;
-    gap: 20px;
-    width: 400px;
-    height: 280px;
-
+  display: flex;
+  flex-direction: column;
+  background-color: #2f1c6a;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 20px;
+  width: 400px;
+  height: 280px;
 }
 
 .get-started button {
-    height: 50px;
-    width: 180px;
-    border-radius: 10px;
-    background-color: #673DE6;
-    color: white;
-    border: 0px solid;
-    font-weight: 900;
+  height: 50px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: #673de6;
+  color: white;
+  border: 0px solid;
+  font-weight: 900;
 }
 
 .get-started button:hover {
-    background-color: #5025D1;
-
+  background-color: #5025d1;
 }
 
 .quotes {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
 }
-
+.hello-photo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
 .speed-reliability {
-    margin-top: 60px;
-    width: 100%;
-    height: 700px;
-    background-color: #1F1346;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    gap: 30px;
+  margin-top: 60px;
+  width: 100%;
+  height: 700px;
+  background-color: #1f1346;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  gap: 30px;
+}
+.total-security {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+  background-color: #1f1346;
+}
+.total-security .text-total {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
 }
