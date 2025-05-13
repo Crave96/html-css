@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   background-color: white;
 }
@@ -16,23 +20,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
   position: sticky;
   top: 0;
   z-index: 1;
   background-color: white;
+
 }
+
 .ask-kodee {
   position: fixed;
   right: 30px;
   bottom: 10px;
   z-index: 1;
 }
+
 .ask-kodee button {
-  
   background-color: #673de6;
   color: white;
-  font-weight: 800;
+  font-weight: 600;
   border-radius: 100px;
   border: 0px;
   cursor: pointer;
@@ -41,12 +46,14 @@ body {
   line-height: 24px;
   padding: 8px 16px 8px 8px;
 }
+
 .ask-kodee button:hover {
   background-color: #5025d1;
 }
 
 .header-page .logo-meun :hover {
   color: gray;
+  cursor: pointer;
 }
 
 .header-page .logo-meun {
@@ -59,6 +66,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
 }
 
 .log-in button {
@@ -189,12 +197,14 @@ body {
   padding: 50px 25px;
   gap: 20px;
 }
+
 .bottom-body {
   display: flex;
   padding: 15px;
   flex-direction: column;
   gap: 25px;
 }
+
 .see-features {
   display: flex;
   margin: auto;
@@ -202,6 +212,7 @@ body {
   color: #673dea;
   cursor: pointer;
 }
+
 .business-body button {
   width: 100%;
   height: 50px;
@@ -216,6 +227,7 @@ body {
   border-radius: 10px;
   transition: 0.5s;
 }
+
 .premium button,
 .cloud-stat-up button {
   width: 100%;
@@ -232,10 +244,12 @@ body {
   border: 2px solid #673de6;
   transition: 0.5s;
 }
+
 .premium button:hover,
 .cloud-stat-up button:hover {
   background-color: #e2dbfc;
 }
+
 .business-body button:hover {
   background-color: #5025d1;
 }
@@ -332,15 +346,18 @@ body {
   gap: 10px;
   align-items: center;
   height: 80px;
+
 }
 
 .cards-website {
   display: flex;
+  flex-direction: row;
   gap: 30px;
   height: 300px;
   width: 100%;
   padding: 10px;
   justify-content: center;
+
 }
 
 .simple,
@@ -354,6 +371,7 @@ body {
   gap: 20px;
   width: 400px;
   height: 280px;
+
 }
 
 .get-started button {
@@ -364,6 +382,9 @@ body {
   color: white;
   border: 0px solid;
   font-weight: 900;
+
+
+
 }
 
 .get-started button:hover {
@@ -376,16 +397,18 @@ body {
   justify-content: center;
   margin-top: 30px;
 }
+
 .hello-photo {
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 30px;
 }
+
 .speed-reliability {
   margin-top: 60px;
   width: 100%;
-  height: 700px;
+  height: 650px;
   background-color: #1f1346;
   display: flex;
   flex-direction: column;
@@ -393,18 +416,243 @@ body {
   align-items: center;
   gap: 30px;
 }
+
 .total-security {
   width: 100%;
-  height: 900px;
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 100px;
-  background-color: #1f1346;
+  background-color: #1F1346;
+  color: white;
+
 }
+
 .total-security .text-total {
   display: flex;
   flex-direction: column;
   gap: 50px;
   justify-content: center;
+}
+
+.text-total button {
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #673de6;
+  color: white;
+  border: 0px solid;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+.text-total button:hover {
+  background-color: #5025D1;
+}
+
+.trusted {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  color: #2F1C6A;
+  margin-top: 70px;
+
+}
+
+.trusted .header-trusted {
+  font-size: 20px;
+}
+
+.trusted .cards-trusted {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.card-low,
+.card-bies,
+.card-ortega {
+  border: 2px solid #D5DFFF;
+  width: 370px;
+  height: 370px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-low .part-one,
+.card-bies .part-one,
+.card-ortega .part-one {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #F4F5FF;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+}
+
+.card-low .part-two,
+.card-bies .part-two,
+.card-ortega .part-two {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 40px;
+  width: 100%;
+  gap: 40px;
+}
+
+
+.read-more button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid #673dea;
+  background-color: white;
+  font-weight: 600;
+  color: #673de6;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.read-more button:hover {
+  background-color: #E2DBFC;
+}
+
+.card-low .part-one img,
+.card-bies .part-one img,
+.card-ortega .part-one img {
+  color: #434343;
+  width: 64px;
+  height: 64px;
+  border-radius: 40px;
+  margin-right: 10px;
+  background-color: white;
+  background-color: #6040d2;
+}
+
+
+.here-help {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.here-help .here-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  color: #2F1C6A;
+}
+
+.save-up {
+  background-color: #261559;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  gap: 40px;
+
+}
+
+.save-up button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  background-color: #673DE5;
+  cursor: pointer;
+  border: 0px solid;
+  transition: 0.5s;
+}
+
+.save-up button:hover {
+  background-color: #5025D1;
+}
+
+.dotted-border {
+  border-bottom: 2px dashed grey;
+  padding-bottom: 5px ;
+  width: fit-content;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #F4F5FF;
+}
+
+@media (max-width:600px) {
+
+  .page-one {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  #timer-button {
+    width: 500px;
+    margin-top: 10px;
+  }
+
+  .claim-button button {
+    width: 500px;
+  }
+
+  .online-photo img {
+    width: 600px;
+  }
+
+  .recommended img {
+    width: 500px;
+    background-color: blue;
+  }
+
+  .website-made {
+    flex-direction: column;
+    height: 1200px;
+    justify-items: center;
+    padding: 40px;
+
+  }
+
+  .currently {
+    height: 350px;
+    font-size: 15px;
+
+  }
+
+  .cards-website {
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+  }
+
+  .simple,
+  .fast,
+  .free {
+    width: 450px;
+    transform: translate(-20px, 00px)
+  }
+
+  .get-started button {
+    width: 200px;
+    transform: translate(10px, 200px)
+  }
+
+
+
 }
