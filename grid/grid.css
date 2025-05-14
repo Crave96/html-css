@@ -1,0 +1,13 @@
+.everthing{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,auto);
+    
+}
+.head-text{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
