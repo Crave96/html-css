@@ -1,28 +1,23 @@
-.header{
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    width: 100%;
-    background-color: black;
-    justify-content: flex-end;
-    align-items: center;
-    
+*{
+    margin: 0;
 }
-.part-one{
-    display: flex;
-    background-color: rgba(0, 0, 255, 0.457);
-    height: 100px;
-    width: 50%;
-    border-radius: 20px 20px 0 0;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    
-    
-}
-.part-two{
-    background-color: red;
+
+
+div{
     height: 50px;
-    width: 50%;
-    border-radius: 0 0 20px 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#red{
+    background-color: red;
+}
+#blue{
+    background: blue;
+}
+#yellow{
+    background: yellow;
+}
+#black{
+    background: black;
 }
