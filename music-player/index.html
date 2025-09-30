@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c13bd87d93.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-palyer">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/IMG_20230626_145852_600.webp" class="song-img" />
+        <h1>One day</h1>
+        <p>it's over</p>
+        <audio id="song">
+          <source
+            src="media/الشيخ منصور السالمي - أنشوده رائعه - ساقبل ياخالقي من جديد(MP3_320K).mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="prog" />
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let prog = document.getElementById("prog");
+      let song = document.getElementById("song");
+      let ctrlIcon = document.getElementById("ctrlIcon");
+
+      song.onloadedmetadata = function () {
+        prog.max = song.duration;
+        prog.value = song.currentTime;
+      };
+      function playPause() {
+        if (ctrlIcon.classList.contains("fa-pause")) {
+          song.pause();
+          ctrlIcon.classList.remove("fa-pause");
+          ctrlIcon.classList.add("fa-play");
+        } else {
+          song.play();
+          ctrlIcon.classList.add("fa-pause");
+          ctrlIcon.classList.remove("fa-play");
+        }
+      }
+
+      if (song.play()) {
+        setInterval(() => {
+          prog.value = song.currentTime;
+        }, 500);
+      }
+      prog.onchange = function() {
+        song.play();
+        song.currentTime = prog.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+      };
+    </script>
+  </body>
+</html>
