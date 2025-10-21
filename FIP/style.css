@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 8000px;
+    height: 100vh;
     background: #fff;
 }
 
@@ -19,18 +19,20 @@ body {
     top: 0;
     z-index: 1000;
 
+
 }
 
-.menu-bar{
+.menu-bar {
     display: flex;
     justify-content: space-between;
     background: #17253F;
     max-width: 1140px;
     margin: 0 auto;
     align-items: center;
+
 }
 
- .menu-bar ul {
+.menu-bar ul {
     display: flex;
     margin: 20px 0;
 }
@@ -39,10 +41,10 @@ body {
     display: inline-block;
     position: relative;
     height: 40px;
-   
+
 }
 
- .menu-bar ul a {
+.menu-bar ul a {
     text-decoration: none;
     list-style: none;
     color: #29aae1;
@@ -52,7 +54,7 @@ body {
     line-height: 26px;
     display: inline-flex;
     align-items: center;
-       
+
 }
 
 .menu-bar ul a:hover {
@@ -60,51 +62,58 @@ body {
 }
 
 
-header  img {
+header img {
     margin: 20px 0;
     width: 140px;
     background: #17253F;
 }
-.dropdown{
+
+.dropdown {
     display: none;
 
 }
 
-.menu-bar ul li:hover .dropdown{
+.menu-bar ul li:hover .dropdown {
     display: inline-block;
     position: absolute;
     left: 0;
     bottom: -240px;
     background: #EDEDED;
     cursor: pointer;
-    width:205px;
+    width: 205px;
 
 }
-.dropdown ul{
+
+.dropdown ul {
     display: block;
-   margin: auto;
-       
+    margin: auto;
 
-    
+
+
 }
+
 .dropdown ul li {
     display: flex;
     width: auto;
     margin: auto;
     padding: 10px;
-   
-        
+
+
 }
-.dropdown ul li:hover{
-    background-color: #fff; 
+
+.dropdown ul li:hover {
+    background-color: #fff;
 }
-.dropdown ul li a{
+
+.dropdown ul li a {
     color: rgb(8, 1, 1);
 }
-.dropdown ul li a:hover{
-    color:  #29AAE1;
-    
+
+.dropdown ul li a:hover {
+    color: #29AAE1;
+
 }
+
 .topSlider {
     display: flex;
     width: 100%;
@@ -123,14 +132,14 @@ header  img {
 .playersContent {
     background: #29AAE1;
     width: 100%;
-    height: 500px;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
 
-    
+
 }
 
 .playersName-number {
@@ -138,34 +147,46 @@ header  img {
     display: flex;
     flex-direction: column;
     gap: 70px;
+    height: 50%;
+    /* background: red; */
 }
-#playerRank{
-    
-    width: 40%;
+
+#playerRank {
+
+    display: flex;
+    align-items: end;
+    /* background-color: blue;  */
 }
+
+/* player name  */
 #playerName {
-    max-width: 10px;
-    height: 20%;
-   
-    
+    /* background: yellow; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+
 }
 
-
+/* player info ran/name/photo/flag */
 .playerInfo {
     display: flex;
-    gap: 100px; 
+    gap: 100px;
     background: #2685B7;
     padding: 30px;
-    height: 365px;
-  
-    
-    
+    height: 72%;
+    width: 45%;
+
+
+
 }
 
 .playersNumNam {
     display: flex;
+    width: 100%;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
+    /* background: red; */
 
 }
 
@@ -180,6 +201,7 @@ header  img {
     font-size: 60px;
 }
 
+/* player flag / points */
 .playersPoints {
     display: flex;
     align-items: center;
@@ -187,7 +209,11 @@ header  img {
     gap: 40px;
     padding: 0px 10px;
     border: 1px solid #fff;
-    align-items: stretch;
+    /* align-items: stretch; */
+    background: red;
+    height: 90%;
+    width: 100%;
+
 }
 
 .flag-name {
@@ -214,7 +240,7 @@ header  img {
     display: flex;
     height: 110%;
     flex-direction: column-reverse;
- 
+
 }
 
 .playerImg img {
@@ -232,6 +258,7 @@ header  img {
     gap: 15px;
     color: #404040;
     cursor: pointer;
+
 }
 
 .playerone {
@@ -288,18 +315,19 @@ header  img {
     width: 44.5%;
     display: flex;
     justify-content: center;
-    
+
 }
-.slide button{
+
+.slide button {
     width: 70px;
     height: 45px;
     background: #29AAE1;
     border: 0;
     font-size: 20px;
     cursor: pointer;
-   
+
 }
 
-.slide button:hover{
+.slide button:hover {
     background: #fff;
 }
