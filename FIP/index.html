@@ -4,18 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIP Ranking</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <header>
-        <a href="#"> <img src="meida/logo-fip-bianco.svg" class="logo" /></a>
+      <header class="menu-bar">
+        <span><img src="meida/logo-fip-bianco.svg" /></span>
         <ul>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">TOURNAMENTS</a></li>
-          <li><a href="#">RANKINGS</a></li>
-          <li><a href="#">NEWS&MEDIA</a></li>
-          <li><a href="#">FEDERTIONS</a></li>
+          <li>
+            <a href="#">
+              ABOUT US <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown">
+              <ul>
+                <li>
+                  <a href="#"
+                    >Who We Are
+                    <i class="fa fa-caret-down" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li><a href="#">Strategic Plan </a></li>
+                <li><a href="#">Clean Sport</a></li>
+                <li><a href="#"> World Padel Report</a></li>
+                <li>
+                  <a href="#">
+                    Roll Of Honour
+                    <i class="fa fa-caret-down" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li><a href="#"> Contacts</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">TOURNAMENTS </a></li>
+          <li>
+            <a href="#">
+              RANKINGS<i class="fa fa-caret-down" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >NEWS&MEDIA<i class="fa fa-caret-down" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li><a href="#">FEDERATIONS</a></li>
           <li><a href="#">DOCUMENTS</a></li>
           <li><a href="#">ACADEMY</a></li>
         </ul>
@@ -30,25 +69,44 @@
       <div class="playerInfo">
         <div class="playersName-number">
           <div class="playersNumNam">
-            <h1>1</h1>
-            <h2>Alejandro Galan</h2>
+            <!--  1111111 player rank -->
+            <h1 id="playerRank">1</h1>
+            <!--  22222 playerName -->
+            <h2 id="playerName">Alejandro Galan</h2>
           </div>
           <div class="playersPoints">
             <div class="flag-name">
-              <img src="meida/Spain_Fip.webp" />
-              <h1>ESP</h1>
+              <!-- 3333333 country flag -->
+              <img id="countryFlag" src="meida/Spain_Fip.webp" />
+              <!-- 44444444 county name -->
+              <h1 id="countyName">ESP</h1>
             </div>
             <div class="points">
               <h1>Points</h1>
-              <h1>13500</h1>
+              <!-- 55555player points -->
+              <h1 id="playerPoints">13500</h1>
             </div>
           </div>
         </div>
         <div class="playerImg">
-          <img src="meida/Alejandro-Galan.webp" />
+          <!-- 6666 player img -->
+          <img id="playerImg" src="meida/Alejandro-Galan.webp" />
         </div>
       </div>
+      <div class="slide">
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+        <button id="btn3">3</button>
+        <button id="btn4">4</button>
+        <button id="btn5">5</button>
+        <button id="btn6">6</button>
+        <button id="btn7">7</button>
+        <button id="btn8">8</button>
+        <button id="btn9">9</button>
+        <button id="btn10">10</button>
+      </div>
     </div>
+
     <div class="allPlayers">
       <div class="playerone">
         <img src="meida/Bergamini-2.webp" />
@@ -176,7 +234,7 @@
           <h4>Javier Garrido</h4>
         </div>
         <div class="flag-points">
-          <img src="meida/Argentina_Fip.webp" />
+          <img src="meida/Spain_Fip.webp" />
           <h4>ESP</h4>
           <p>Points</p>
           <h4>2668</h4>
@@ -184,6 +242,6 @@
       </div>
     </div>
 
-    <script></script>
+    <script src="script.js"></script>
   </body>
 </html>
