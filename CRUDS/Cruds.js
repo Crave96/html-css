@@ -87,8 +87,7 @@ function showDate() {
     getTotal();
     let table = '';
     for (let i = 0; i < dataPro.length; i++) {
-        table += `
-         <tr>
+        table += ` <tr>
                         <td>${i+1}</td>
                         <td>${dataPro[i].title}</td>
                         <td>${dataPro[i].price}</td>
@@ -102,16 +101,13 @@ function showDate() {
                     </tr>
         `
 
-    }
-
-     document.getElementById('tbody').innerHTML = table;
+    }  document.getElementById('tbody').innerHTML = table;
     let btnDelete = document.getElementById('deleteAll');
     if (dataPro.length > 0) {
         btnDelete.innerHTML = `<button onclick= "deleteAll()" >Delete All (${dataPro.length})</button> `;
     
     
-    }else{
-      btnDelete.innerHTML = ''
+    }else{  btnDelete.innerHTML = ''
 
     }
 
