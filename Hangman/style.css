@@ -269,3 +269,22 @@ hr {
     border: 1px solid #ccc;
     color: #fff;
 }
+.rePlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    font-size: bold;
+    font-size: large;
+    border-radius: 40px ;
+    cursor: pointer;
+    background-color: #009688;
+    color: #fff;
+    border: 1px solid #009688;
+    
+}
+.rePlay:hover{
+    background-color: #21a497;
+}

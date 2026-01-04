@@ -1,7 +1,6 @@
 // letters
 const letters = "abcdefghijklmnopqrstuvwxyz";
 
-
 // get array from letters
 let lettersArray = Array.from(letters);
 //console.log(lettersArray);
@@ -93,6 +92,7 @@ let theDraw = document.querySelector(".hangman-draw");
 
 // handle clicking on letters
 document.addEventListener("click", function(e) { 
+  
    // set the chose status 
     let theStatus = false;
   if(e.target.className === 'letter-box'){
@@ -111,7 +111,7 @@ document.addEventListener("click", function(e) {
       // if the clicked letter equal to one of the chosen word letter
       if (theClickedLetter == wordLetter){
 
-        //set status to correct
+        //set status to correct      
         theStatus = true;
 
         // loop on all guess spans
@@ -134,7 +134,7 @@ document.addEventListener("click", function(e) {
 
       //increase the wrong attempts
       wrongAttempts++;
-
+  
       //add class wrong on the draw element
       theDraw.classList.add(`wrong-${wrongAttempts}`);
       
@@ -147,20 +147,24 @@ document.addEventListener("click", function(e) {
 
         lettersContainer.classList.add("finished");
       }
-
+      
     }else{
     // play fail success sound
     document.getElementById("success").play();
     }
-
   }
 });
+
 
 // endgame function
 function endGame() {
 
   //popup div
   let div = document.createElement("div");
+  let btnReplay = document.createElement("button");
+  let textReplay =document.createTextNode(`Restart The Game `);
+  btnReplay.appendChild(textReplay);
+
 
   // create text
   let divText = document.createTextNode(`Game Over, The word Is ${randomValueValue}`);
@@ -173,7 +177,21 @@ function endGame() {
 
   //append to the body
   document.body.appendChild(div);
+  btnReplay.classList.add("rePlay");
+  document.body.appendChild(btnReplay);
+  btnReplay.addEventListener("click" ,function(){
+  window.location.reload();
+  
+
+  })
+
 }
+
+
+
+
+
+
 
 
 
