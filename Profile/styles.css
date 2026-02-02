@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #050510;
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 2rem ;  /* root element 1rem = by default = 16px ليه مش بنستخدم بكسل علشان بيتكون ابسليوت الروت ايلمنت مش بيكون فكسد */
+}
+/*       header start       */
+.nav{
+    position: sticky;
+    top: 0;
+    background-color: rgba(5, 5, 16, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(96, 28, 252,0.2);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+
+}
+
+.nav-logo{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #601cfc;
+    letter-spacing: 4.5px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-links a{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: #601cfc;
+}
+/*       header end       */
+
+/*       hero start        */
+
+.hero{
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    /* 4 for top and bottom 2 for left and right */
+    overflow: hidden;
+}
+.hero-background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.4) contrast(1.0);
+}
+.hero::before{
+    content: " ";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(11, 11, 22, 0.7) 0% , rgba(26, 10, 46, 0.7) 50% , rgba(11, 11, 22, 0.7)  100%  );
+}
+.hero-content{
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+}
+.hero-title{
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #601cfc 100% );
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hero-subtitle{
+    font-size:clamp(1.1rem, 2vw, 1.4rem);
+    color: #b0b0b0;
+    margin-bottom: 3rem;
+}
+.hero-buttons{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn-primary{
+    background-color: #601cfc;
+    color: #ffff;
+    box-shadow: 0 4px 20px rgba(96, 28, 252, 0.4);
+    
+}
+.btn-primary:hover{
+    background-color: #7a3dff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(96, 28, 252, 0.6);
+}
+.btn-secondary{
+    background-color: transparent;
+    color: #601cfc;
+    border: 2px solid #601cfc;
+}
+.btn-secondary:hover{
+    background-color:rgba(96, 28, 252, 0.1);
+    transform: translateY(-2px);
+}
+.hero-icons{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 2rem;
+    color: #601cfc;
+    opacity: 0.6;
+    cursor: pointer;
+}
+/*       hero end          */
+/*       reel start          */
+/*       reel end          */
